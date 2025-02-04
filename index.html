@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello, NoShortsPage</title>
+    <title>Hello page</title>
     <link rel="stylesheet" href="hellopage.css">
     <link rel="icon" type="image/svg" href="logo_icon.svg">
 </head>
@@ -34,10 +34,16 @@
         </div>
         <div class="button-group">
             <a href="https://t.me/your_channel" class="submit_btn black_button">Telegram</a>
-            <a href="https://www.youtube.com/" class="submit_btn">Try on Youtube</a>
+            <button id="closeTabButton" class="submit_btn">Close This Page</button>
         </div>
     </div>
     <img src="vortech.svg" alt="logo">
+
+    <script>
+        document.getElementById('closeTabButton').addEventListener('click', function() {
+            window.close();
+        });
+    </script>
 </body>
 
 </html>
